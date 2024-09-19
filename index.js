@@ -1,3 +1,4 @@
+const cors = require('cors')
 const express = require('express')
 const app = express()
 
@@ -29,7 +30,7 @@ const requestLogger = (request, response, next) => {
   next()
 }
 
-const cors = require('cors')
+
 
 app.use(cors())
 
